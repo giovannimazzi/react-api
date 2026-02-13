@@ -10,10 +10,11 @@
 }
 
 header {
-  background-color: #2d2a2e;
+  background-color: #221f22;
 }
 
-main {
+main,
+#opt {
   background-color: #3c3c3c;
 }
 
@@ -23,4 +24,9 @@ main {
 
 .hepburn-img {
   object-position: 5% center;
+}
+
+main {
+  overflow-y: auto;
+  scroll-behavior: smooth;
 }
