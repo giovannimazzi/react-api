@@ -16,3 +16,11 @@ header {
 main {
   background-color: #3c3c3c;
 }
+
+.img-card-container {
+  aspect-ratio: calc(3 / 4);
+}
+
+.hepburn-img {
+  object-position: 5% center;
+}
