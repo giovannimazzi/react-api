@@ -1,4 +1,5 @@
 export default function CastCard({ item }) {
+  const movies = item.most_famous_movies ?? item.known_for ?? [];
   return (
     <div className="col">
       <div className="card g-0 h-100 text-start">
@@ -17,9 +18,13 @@ export default function CastCard({ item }) {
                 {item.birth_year} - {item.nationality}
               </h6>
               <p className="card-text">{item.biography}</p>
-              <div className="card-text">
+              <div className="card-text mb-2">
                 <strong className="text-muted">Awards: </strong>
                 <span className="text-body-secondary">{item.awards}</span>
+              </div>
+              <div className="card-text">
+                <strong className="text-muted">Most Famous Movies: </strong>
+                <span className="text-body-secondary">{movies.join(", ")}</span>
               </div>
             </div>
           </div>
